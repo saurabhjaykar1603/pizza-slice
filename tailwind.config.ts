@@ -9,6 +9,9 @@ const config: Config = {
   ],
   theme: {
   	extend: {
+		animation: {
+			'spin-slow': 'spin 5s linear infinite',
+		  },
 		  fontFamily: {
                 manrope: ['var(--font-manrope)', ...fontFamily.sans],
             },
