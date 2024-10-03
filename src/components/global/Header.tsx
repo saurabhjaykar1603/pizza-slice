@@ -12,7 +12,7 @@ import { Button } from "../ui/button";
 function Header() {
   return (
     <header className="bg-white">
-      <nav className="px-28 py-5 flex items-center justify-between">
+      <nav className="container mx-auto py-5 flex items-center justify-between">
         <div className="flex items-center space-x-3">
           <svg
             data-testid="logo"
@@ -45,7 +45,7 @@ function Header() {
             </SelectContent>
           </Select>
         </div>
-        <div className="flex items-center gap-x-4">
+        <div className="md:flex items-center gap-x-4 hidden">
           <ul className="flex items-center font-medium space-x-4">
             <li>
               <Link className="hover:text-primary" href={"/"}>
@@ -58,7 +58,7 @@ function Header() {
               </Link>
             </li>
           </ul>
-          <div className="relative">
+          <div className="relative ">
             <Link href="/cart">
               <ShoppingBasket className="hover:text-primary" />
             </Link>
